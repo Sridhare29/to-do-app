@@ -16,14 +16,17 @@ function TaskList() {
           <button className='clearAll'>Clear All</button>
         </div>
         <ul>
-          <li>
-            <p>
-              <span className='name'>Task A</span>
-              <span className='time'>02:09:03 AM 25/8/2014</span>
-            </p>
-            <i class="bi bi-pencil-square"></i>
-            <i class="bi bi-trash"></i>
-          </li>
+          { tasks.map((tasks)=>(
+             <li>
+             <p>
+               <span className='name'>{tasks.name}</span>
+               <span className='time'>{tasks.time}</span>
+             </p>
+             <i class="bi bi-pencil-square"></i>
+             <i class="bi bi-trash"></i>
+           </li>
+          )
+          )}
         </ul>
     </section>
   )
