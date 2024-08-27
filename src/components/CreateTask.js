@@ -14,6 +14,8 @@ function CreateTask({tasklist, setTasklist}) {
       name : e.target.task.value,
       time : `${date.toLocaleTimeString()} ${date.toLocaleDateString}`
     }
+    setTasklist([...tasklist, newTask]);
+    e.target.task.value = "";
   }
   return (
     <section className='addTask'>
