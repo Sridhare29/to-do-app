@@ -11,7 +11,7 @@ function CreateTask({tasklist, setTasklist}) {
 
     const newTask = {
       id : date.getTime(),
-      name : e,
+      name : e.target.task.value,
       time : `${date.toLocaleTimeString()} ${date.toLocaleDateString}`
     }
   }
