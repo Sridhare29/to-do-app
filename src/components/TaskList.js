@@ -8,11 +8,11 @@ function TaskList({tasklist, setTasklist}) {
             <span className='title'> TODO </span>
             <span className='count'>{tasklist.length}</span>
           </div>
-          <button className='clearAll'>Clear All</button>
+          <button className='clearAll' onClick={()=> setTasklist([])}>Clear All</button>
         </div>
         <ul>
           { tasklist.map((tasks)=>(
-             <li>
+             <li key={tasks.id}>
              <p>
                <span className='name'>{tasks.name}</span>
                <span className='time'>{tasks.time}</span>
