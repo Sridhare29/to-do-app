@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreateTask({tasklist, setTasklist}) {
+function CreateTask({tasklist, setTasklist, task, setTask}) {
 
   const addTask = (e) => {
     e.preventDefault();
