@@ -12,7 +12,7 @@ function CreateTask({tasklist, setTasklist}) {
     const newTask = {
       id : date.getTime(),
       name : e.target.task.value,
-      time : `${date.toLocaleTimeString()} ${date.toLocaleDateString}`
+      time : `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
     }
     setTasklist([...tasklist, newTask]);
     e.target.task.value = "";
