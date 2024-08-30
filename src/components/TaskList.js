@@ -2,8 +2,9 @@ import React from 'react'
 
 function TaskList({tasklist, setTasklist, task, setTask}) {
 
-  function handleEdit(id){
-
+  const handleEdit = (id) => {
+      const selectTask = tasklist.find(tasks => tasks.id === id);
+      setTask(selectTask);  
   }
 
   const handleDelete = (id) => {
